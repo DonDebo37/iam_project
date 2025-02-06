@@ -34,14 +34,13 @@ Several development and production environments
 
 Team Structure & Access Needs: 
 
-  4 Developers (need EC2 and S3 access)
+  4 Developers (need EC2 Full access, DynamoDB full access, RDS full access, Cloudwatch full access)
 
- 2 Operations (need full infrastructure access)
+ 2 Operations (need Cloudwatch full access, EC2 full access and RDS full access)
 
- 1 Finance Manager (needs cost management access)
+ 1 Finance Manager (resource access manager read only, AWS Budgets, AWS Cost and usage report)
 
- 3 Data Analysts (need read-only access to data resources)
-
+ 
 --------- Your Task ---------
 1 - Create their Architecture
 
@@ -67,7 +66,6 @@ Operations group & users
 
 Finance group & user
 
-Analyst group & users
 
 
 
@@ -79,37 +77,4 @@ Create a strong password policy
 
 Ensure users can only access what they need
 
-
-
-5 - Implement These Permissions
-
-Developers:
-
-EC2 management
-
-S3 access for application files
-
-CloudWatch logs viewing
-
-Operations:
-
-Full EC2, CloudWatch access
-
-Systems Manager access
-
-RDS management
-
-Finance:
-
-Cost Explorer
-
-AWS Budgets
-
-Read-only resource access
-
-Analysts:
-
-Read-only S3 access
-
-Read-only database access
 
